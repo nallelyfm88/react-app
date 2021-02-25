@@ -40,7 +40,7 @@ jobs:
         with:
           name: build
           path: build
-      - uses: actions/download-artifact
+      - uses: actions/download-artifact@v1
       #- run: npm install -g surge
       - name: Deploy to Staging
         if: github.event_name == 'push'
