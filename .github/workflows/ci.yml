@@ -2,9 +2,9 @@ name: CI
 
 on:
   pull_request:
-    branches: [develop, master]
+    branches: [develop, master22]
   push:
-    branches: [develop, master]
+    branches: [develop, master22]
 
 jobs:
   build:
@@ -77,5 +77,4 @@ jobs:
           "title": "Automated issue for commit: ${{ github.sha }}",
           "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_.",
           "assigness": ["${{ github.event.pull_request.user.login }}"]
-          }' \ 
-
+          }' \

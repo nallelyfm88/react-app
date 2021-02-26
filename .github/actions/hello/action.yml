@@ -1,0 +1,14 @@
+name: Hello World
+author: Nallely Flores
+description: Some description
+inputs:
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+    default: Nay
+outputs:
+  time:
+    description: "The gretting time"
+runs:
+  using: "node12"
+  main: "dist/index.js"
