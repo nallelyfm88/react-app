@@ -610,7 +610,7 @@ try {
   core.error("Error message");
 
   const name = core.getInput("who-to-greet");
-  core.setSecret("name");
+  core.setSecret(name);
   console.log(`Hello ${name}`);
 
   const time = new Date();
