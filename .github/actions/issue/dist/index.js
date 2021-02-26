@@ -3538,7 +3538,7 @@ async function run() {
       ...github.context.repo,
       title,
       body,
-      assignees: assignees ? assignees.split("\n") : undefined
+      assignees: assignees ? assignees.split("\n") : undefined,
     });
 
     core.setOutput("issue", JSON.stringify(response.data));
@@ -3548,6 +3548,7 @@ async function run() {
 }
 
 run();
+
 
 /***/ }),
 
